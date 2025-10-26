@@ -1,8 +1,8 @@
-lb config -d trixie \
+lb config -d bullseye \
           --debian-installer live \
-          --debian-installer-distribution trixie \
+          --debian-installer-distribution bullseye \
           --debian-installer-gui true \
           --archive-areas "main contrib non-free" \
-          --debootstrap-options "--variant=minbase"
+          --debootstrap-options "--variant=minbase" \
 
-sudo lb build
+          sudo lb build
